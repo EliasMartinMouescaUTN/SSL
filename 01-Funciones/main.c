@@ -3,11 +3,11 @@
 
 int main()
 {
-    char str[64] = "aaa11AaBjsfJJJJ";
+    char str[64] = "AaaaNNNckajsoaaAaAaoooAa";
 
     printf("%i", strToInt(str));
 
-    toUpper(str);
+    strRemove(str, 'a');
     printf("%s\n", str);
 
     return 0;

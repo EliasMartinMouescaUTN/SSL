@@ -45,10 +45,26 @@ void toUpper(char str[])
 }
 
 // d) Eliminar de una cadena dada todas las ocurrencias de un carácter dado.
+void strRemove(char str[], char c)
+{
+    int i = 0;
+    int j = 0;
 
+    while (str[i] != '\0')
+    {
+        if (str[i] != c) 
+        {
+            str[j] = str[i];
+            j++;
+        }
 
+        i++;
+    }
 
+    str[j] = '\0';
 
+    return;
+}
 
 
 // Definición de las funciones no pedidas.

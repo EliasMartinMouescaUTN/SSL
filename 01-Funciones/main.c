@@ -3,11 +3,11 @@
 
 int main()
 {
-    char str[64] = "AaaaNNNckajsoaaAaAaoooAa";
+    char str[64] = "Elicapo";
 
     printf("%i", strToInt(str));
 
-    strRemove(str, 'a');
+    strCat(str, ", el mejor.");
     printf("%s\n", str);
 
     return 0;

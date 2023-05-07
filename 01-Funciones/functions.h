@@ -66,6 +66,25 @@ void strRemove(char str[], char c)
     return;
 }
 
+// e) Concatenar al final de la primera cadena dada una segunda cadena también dada.
+// La variable dest debería tener suficiente tamaño como para guardar las dos
+// strings concatenadas, si no, undefined behaviour!!
+void strCat(char dest[], const char src[])
+{
+    int i = 0;
+    int destLength = strLength(dest);
+
+    while (src[i] != '\0')
+    {
+        dest[destLength + i] = src[i];
+        i++;
+    }
+
+    dest[destLength + strLength(src)] = '\0';
+
+    return;
+}
+
 
 // Definición de las funciones no pedidas.
 int ipow(int b, unsigned int e)

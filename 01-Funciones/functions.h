@@ -3,6 +3,7 @@
 // Funcion útil, no pedida.
 int ipow(int b, unsigned int e);
 
+// a) Calcular y retornar la longitud de una cadena dada.
 int strLength(const char str[])
 {
     int i = 0;
@@ -12,6 +13,7 @@ int strLength(const char str[])
     return i;
 }
 
+// b) Convertir una cadena de dígitos en su equivalente numérico.
 int strToInt(const char str[])
 {
     int i = 0;
@@ -28,6 +30,21 @@ int strToInt(const char str[])
     return number;
 }
 
+// c) Convertir una cadena de caracteres a la misma cadena con todos sus caracteres en mayúscula.
+void toUpper(char str[])
+{
+    int i = 0;
+
+    while (str[i] != '\0')
+    {
+        if (str[i] > 96 && str[i] < 123) str[i] -= 32;
+        i++;
+    }
+
+    return;
+}
+
+// d) Eliminar de una cadena dada todas las ocurrencias de un carácter dado.
 
 
 

@@ -7,7 +7,7 @@ int main()
 
     printf("%i", strToInt(str));
 
-    strCat(str, ", el mejor.");
+    strInsert(str, 'a', 3); 
     printf("%s\n", str);
 
     return 0;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Funcion útil, no pedida.
+// Funcion auxiliar.
 int ipow(int b, unsigned int e);
 
 // a) Calcular y retornar la longitud de una cadena dada.
@@ -85,8 +85,29 @@ void strCat(char dest[], const char src[])
     return;
 }
 
+// f) Modificar la cadena dada con la inserción de un carácter dado en una posición determinada.
+// La string debería poder contener al menos un caracter más, si no, undefined
+// behaviour!!
+void strInsert(char str[], char c, int index)
+{
+    int i = strLength(str);
 
-// Definición de las funciones no pedidas.
+    str[i + 1] = '\0';
+
+    while (i > index)
+    {
+        str[i] = str[i-1];
+        i--;
+    }
+
+    str[i] = c;
+
+    return;
+}
+
+
+
+// Definición de funciones auxiliares.
 int ipow(int b, unsigned int e)
 {
     int result = 1;

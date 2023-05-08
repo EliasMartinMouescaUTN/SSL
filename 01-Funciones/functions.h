@@ -63,6 +63,7 @@ void strRemove(char str[], char c)
 
     str[j] = '\0';
 
+    // Retorna la cantidad de ocurrencias del caracter
     return;
 }
 
